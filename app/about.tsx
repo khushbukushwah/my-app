@@ -3,12 +3,8 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-export default function Home() {
+export default function About() {
   const router = useRouter();
-
-  const goToAbout = () => {
-    router.push("/about");
-  };
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -26,13 +22,6 @@ export default function Home() {
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Hey Khushbu, now you can start.tsx file.
           </h1>
-
-          <button
-            onClick={goToAbout}
-            className="px-4 py-2 bg-blue-600 text-white rounded"
-          >
-            Go to About Page
-          </button>
 
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             Looking for a starting point or more instructions? Head over to{" "}
