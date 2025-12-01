@@ -6,8 +6,8 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
 
-  const goToAbout = () => {
-    router.push("/about");
+  const goToLogin = () => {
+    router.push("/login"); // 👉 Goes to /login page
   };
 
   return (
@@ -28,10 +28,10 @@ export default function Home() {
           </h1>
 
           <button
-            onClick={goToAbout}
+            onClick={goToLogin}
             className="px-4 py-2 bg-blue-600 text-white rounded"
           >
-            Go to About Page
+            Go to Login Page
           </button>
 
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
